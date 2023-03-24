@@ -26,8 +26,8 @@
         <SolidColorBrush Color="Transparent" />
     </local:ForegroundWindow.Background>
     <Grid x:Name="layoutGrid">
-        <TextBox x:Name="MatchStringControl" Text="{Binding MatchString, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" 
-                 Width="50" VerticalAlignment="Bottom" Background="Transparent" Foreground="White" />
+        <TextBox x:Name="MatchStringControl" BorderThickness="0" CaretBrush="Transparent" Text="{Binding MatchString, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" 
+                 Width="50" VerticalAlignment="Bottom" Background="Transparent" Foreground="Transparent" />
         <ItemsControl ItemsSource="{Binding Hints}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
